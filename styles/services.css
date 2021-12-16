@@ -1,0 +1,83 @@
+/* -------------------------------------------------------------------------------------------------- */
+/* SERVICES-SECTION */
+/* -------------------------------------------------------------------------------------------------- */
+
+#services-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-image1,
+#card-image2,
+#card-image3 {
+  height: 250px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#card-image1 {
+  background: url("../Images/image1.jpg");
+  background-size: cover;
+}
+
+#card-image2 {
+  background: url("../Images/image2.jpg");
+  background-size: cover;
+}
+
+#card-image3 {
+  background: url("../Images/image3.jpg");
+  background-size: cover;
+}
+
+.card-content {
+  margin: 20px;
+  letter-spacing: 1px;
+}
+
+.card-content h2 {
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-content p {
+  font-style: italic;
+  text-align: justify;
+}
+
+.card-content button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: var(--default);
+  letter-spacing: 2px;
+  border: 1px solid var(--text);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card-content button:hover {
+  color: var(--default);
+  background-color: var(--text);
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* MEDIA-QUERIES */
+/* -------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 420px) {
+  .card-content {
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  #card-image1,
+  #card-image2,
+  #card-image3 {
+    height: 190px;
+  }
+}

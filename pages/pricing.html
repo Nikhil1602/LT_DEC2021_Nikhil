@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic Website</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/pricing.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+  <body>
+    <!----------------------------------- HEADER-SECTION ----------------------------------->
+
+    <header>
+      <img src="../Images/logo.png" />
+      <ul>
+        <li><a href="../index.html" class="btn">Home</a></li>
+        <li><a href="./services.html" class="btn">Services</a></li>
+        <li><a href="./pricing.html" class="btn active">Pricing</a></li>
+        <li><a href="./team.html" class="btn">Team</a></li>
+      </ul>
+      <div class="nav-bar">
+        <i class="fas fa-bars" onclick="openNav()"></i>
+        <div id="sidenav" class="sidenav-container">
+          <i class="fas fa-times" onclick="closeNav()"></i>
+          <a href="../index.html" onclick="closeNav()" class="tab">Home</a>
+          <a href="./services.html" onclick="closeNav()" class="tab"
+            >Services</a
+          >
+          <a href="./pricing.html" onclick="closeNav()" class="tab toggle"
+            >Pricing</a
+          >
+          <a href="./team.html" onclick="closeNav()" class="tab">Team</a>
+        </div>
+      </div>
+    </header>
+
+    <!----------------------------------- PRICING-SECTION ----------------------------------->
+
+    <div class="title page-heading">
+      <h2>Our <span> Pricing </span></h2>
+      <p class="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis beatae
+        quod voluptate ullam nostrum perspiciatis tempore velit rerum
+        consequatur, accusantium enim qui repellat voluptatem dolorem
+        cupiditate, sint perferendis molestias neque. Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Nobis beatae quod voluptate ullam
+        nostrum perspiciatis tempore velit rerum consequatur, accusantium enim
+        qui repellat voluptatem dolorem cupiditate, sint perferendis molestias
+        neque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+        beatae quod voluptate ullam nostrum perspiciatis tempore velit rerum
+        consequatur, accusantium enim qui repellat voluptatem dolorem
+        cupiditate, sint perferendis molestias neque.
+      </p>
+    </div>
+
+    <div id="pricing-section" class="section-column">
+      <section class="pricing-plan card">
+        <div class="pricing-plan-header">
+          <h1 class="pricing-plan-title">Basic</h1>
+          <h2 class="pricing-plan-summary">Including Logo & Card</h2>
+        </div>
+        <div class="pricing-plan-description">
+          <ul class="pricing-plan-list">
+            <li class="pricing-plan-feature">5 Logo</li>
+            <li class="pricing-plan-feature">2 Business Card</li>
+            <li class="pricing-plan-feature">2 Letterpad</li>
+            <li class="pricing-plan-feature">3x Revision</li>
+          </ul>
+        </div>
+        <div class="pricing-plan-actions">
+          <p class="pricing-plan-cost">₹500</p>
+          <a href="#" class="pricing-plan-button">Purchase</a>
+        </div>
+      </section>
+      <section class="pricing-plan card">
+        <span></span>
+        <div class="pricing-plan-header">
+          <h1 class="pricing-plan-title">Professional</h1>
+          <h2 class="pricing-plan-summary">Including Stationary & Logo</h2>
+        </div>
+        <div class="pricing-plan-description">
+          <ul class="pricing-plan-list">
+            <li class="pricing-plan-feature">Logo + Business Card</li>
+            <li class="pricing-plan-feature">Letterpad, Brochure</li>
+            <li class="pricing-plan-feature">Stationary, ID-Card</li>
+            <li class="pricing-plan-feature">5x Revision</li>
+          </ul>
+        </div>
+        <div class="pricing-plan-actions">
+          <p class="pricing-plan-cost">₹3500</p>
+          <a href="#" class="pricing-plan-button">Purchase</a>
+        </div>
+      </section>
+      <section class="pricing-plan card">
+        <div class="pricing-plan-header">
+          <h1 class="pricing-plan-title">Premium</h1>
+          <h2 class="pricing-plan-summary">Including Ads & Stationary</h2>
+        </div>
+        <div class="pricing-plan-description">
+          <ul class="pricing-plan-list">
+            <li class="pricing-plan-feature">Logo + Business Card</li>
+            <li class="pricing-plan-feature">Stationary, Brochure</li>
+            <li class="pricing-plan-feature">Posters, Social Media Ads</li>
+            <li class="pricing-plan-feature">5x Revision</li>
+          </ul>
+        </div>
+        <div class="pricing-plan-actions">
+          <p class="pricing-plan-cost">₹6000</p>
+          <a href="#" class="pricing-plan-button">Purchase</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="divider">
+      <img class="divider" src="../Images/divider.png" alt="divider" />
+    </div>
+
+    <!----------------------------------- FOOTER-SECTION ----------------------------------->
+
+    <footer>
+      <div class="container">
+        <div class="sec contact">
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fas fa-map-marker-alt"></i></span>
+              <span class="address">
+                12/3, XYZ Colony<br />
+                Bengaluru, KA,<br />IN
+              </span>
+            </li>
+            <li>
+              <span><i class="fas fa-phone-alt"></i></span>
+              <p>
+                <a href="tel:12345678900">+1 234 567 8900</a><br /><a
+                  href="tel:12345678900"
+                  >+1 234 567 8900</a
+                >
+              </p>
+            </li>
+            <li>
+              <span><i class="fas fa-envelope"></i></span>
+              <p>
+                <a href="mailto:knowmore@email.com">knowmore@email.com</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="sec quickLinks">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="sec aboutus">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequuntur, harum, numquam ipsum excepturi voluptate tenetur,
+            aperiam enim facere iste explicabo tempora minus inventore fuga
+            libero ullam totam odio eveniet? Minima!
+          </p>
+          <ul class="sci">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright-text">
+      <p>
+        Copyright <i class="far fa-copyright"></i> XYZ. All rights Reserved.
+      </p>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

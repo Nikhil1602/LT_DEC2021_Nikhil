@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic Website</title>
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icons library -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+  <body onscroll="scrollEvent()">
+    <!----------------------------------- HEADER-SECTION ----------------------------------->
+
+    <header>
+      <img src="./Images/logo.png" />
+      <ul>
+        <li><a href="./index.html" class="btn active">Home</a></li>
+        <li><a href="./pages/services.html" class="btn">Services</a></li>
+        <li><a href="./pages/pricing.html" class="btn">Pricing</a></li>
+        <li><a href="./pages/team.html" class="btn">Team</a></li>
+      </ul>
+      <div class="nav-bar">
+        <i class="fas fa-bars" onclick="openNav()"></i>
+        <div id="sidenav" class="sidenav-container">
+          <i class="fas fa-times" onclick="closeNav()"></i>
+          <a href="./index.html" onclick="closeNav()" class="tab toggle"
+            >Home</a
+          >
+          <a href="./pages/services.html" onclick="closeNav()" class="tab"
+            >Services</a
+          >
+          <a href="./pages/pricing.html" onclick="closeNav()" class="tab"
+            >Pricing</a
+          >
+          <a href="./pages/team.html" onclick="closeNav()" class="tab">Team</a>
+        </div>
+      </div>
+    </header>
+
+    <!----------------------------------- MAIN-SECTION ----------------------------------->
+
+    <p id="headline">
+      Let's <span>Grow</span> the <br />
+      <span>Business</span><br />
+      together.
+    </p>
+
+    <div class="divider">
+      <img class="divider" src="./Images/divider.png" alt="divider" />
+    </div>
+
+    <!----------------------------------- SECTION-ONE ----------------------------------->
+
+    <section id="main-section">
+      <div class="main-container">
+        <div class="main-image"></div>
+        <div class="main-text">
+          <h2>Our <span> Goal </span></h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            eligendi minus, alias ducimus voluptates quibusdam omnis, quia
+            officiis beatae quae, accusantium id velit nihil delectus obcaecati
+            dignissimos. Laboriosam, repudiandae illum? Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Mollitia eligendi minus, alias
+            ducimus voluptates quibusdam omnis, quia officiis beatae quae,
+            accusantium id velit nihil delectus obcaecati dignissimos.
+            Laboriosam, repudiandae illum? dignissimos. Laboriosam, repudiandae
+            illum? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Mollitia eligendi minus, alias ducimus voluptates quibusdam omnis,
+            quia officiis beatae quae, accusantium id velit nihil delectus
+            obcaecati dignissimos. Laboriosam, repudiandae illum?
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider">
+      <img class="divider" src="./Images/divider.png" alt="divider" />
+    </div>
+
+    <!----------------------------------- SECTION-TWO ----------------------------------->
+
+    <div id="achievements-container">
+      <div class="counter-up">
+        <div class="counter-title title">
+          <h2>Our <span> Achievements </span></h2>
+        </div>
+        <div class="counter-content">
+          <div class="counter-box">
+            <div class="counter-icon">
+              <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="counter" data-target="55400">0</div>
+            <div class="counter-text">Happy Clients</div>
+          </div>
+          <div class="counter-box">
+            <div class="counter-icon">
+              <i class="fas fa-hourglass-half"></i>
+            </div>
+            <div class="counter" data-target="10">0</div>
+            <div class="counter-text">Years of Experience</div>
+          </div>
+          <div class="counter-box">
+            <div class="counter-icon">
+              <i class="fas fa-cubes"></i>
+            </div>
+            <div class="counter" data-target="95400">0</div>
+            <div class="counter-text">Orders Completed</div>
+          </div>
+          <div class="counter-box">
+            <div class="counter-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="counter" data-target="110">0</div>
+            <div class="counter-text">Awards Received</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider">
+      <img class="divider" src="./Images/divider.png" alt="divider" />
+    </div>
+
+    <!----------------------------------- SECTION-THREE ----------------------------------->
+
+    <div id="testimonial-section">
+      <div class="testimonial-title title">
+        <h2>Our <span> Testimonials </span></h2>
+      </div>
+      <div class="testimonial-wrapper">
+        <div class="testimonial-card">
+          <div class="card-thumb">
+            <img
+              src="./Images/person1.jpg"
+              class="client-img"
+              alt="client-pic1"
+            />
+            <span class="client-name">Client One</span>
+          </div>
+          <div class="card-body">
+            <p class="review">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              reprehenderit beatae praesentium delectus iusto debitis tempora
+              inventore tempore necessitatibus, sint fugit voluptas natus
+              asperiores fugiat exercitationem ab cum quae porro. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Ut reprehenderit
+              beatae praesentium delectus iusto debitis tempora inventore
+              tempore necessitatibus, sint fugit voluptas natus asperiores
+              fugiat exercitationem ab cum quae porro.
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-thumb">
+            <img
+              src="./Images/person2.jpg"
+              class="client-img"
+              alt="client-pic2"
+            />
+            <span class="client-name">Client Two</span>
+          </div>
+          <div class="card-body">
+            <p class="review">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              reprehenderit beatae praesentium delectus iusto debitis tempora
+              inventore tempore necessitatibus, sint fugit voluptas natus
+              asperiores fugiat exercitationem ab cum quae porro. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Ut reprehenderit
+              beatae praesentium delectus iusto debitis tempora inventore
+              tempore necessitatibus, sint fugit voluptas natus asperiores
+              fugiat exercitationem ab cum quae porro.
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-thumb">
+            <img
+              src="./Images/person3.jpg"
+              class="client-img"
+              alt="client-pic3"
+            />
+            <span class="client-name">Client Three</span>
+          </div>
+          <div class="card-body">
+            <p class="review">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              reprehenderit beatae praesentium delectus iusto debitis tempora
+              inventore tempore necessitatibus, sint fugit voluptas natus
+              asperiores fugiat exercitationem ab cum quae porro. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Ut reprehenderit
+              beatae praesentium delectus iusto debitis tempora inventore
+              tempore necessitatibus, sint fugit voluptas natus asperiores
+              fugiat exercitationem ab cum quae porro.
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indicators">
+        <button class="active-btn"></button>
+        <button></button>
+        <button></button>
+      </div>
+    </div>
+
+    <div class="divider">
+      <img class="divider" src="./Images/divider.png" alt="divider" />
+    </div>
+
+    <!----------------------------------- FOOTER-SECTION ----------------------------------->
+
+    <footer>
+      <div class="container">
+        <div class="sec contact">
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fas fa-map-marker-alt"></i></span>
+              <span class="address">
+                12/3, XYZ Colony<br />
+                Bengaluru, KA,<br />IN
+              </span>
+            </li>
+            <li>
+              <span><i class="fas fa-phone-alt"></i></span>
+              <p>
+                <a href="tel:12345678900">+1 234 567 8900</a><br /><a
+                  href="tel:12345678900"
+                  >+1 234 567 8900</a
+                >
+              </p>
+            </li>
+            <li>
+              <span><i class="fas fa-envelope"></i></span>
+              <p>
+                <a href="mailto:knowmore@email.com">knowmore@email.com</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="sec quickLinks">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="sec aboutus">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequuntur, harum, numquam ipsum excepturi voluptate tenetur,
+            aperiam enim facere iste explicabo tempora minus inventore fuga
+            libero ullam totam odio eveniet? Minima!
+          </p>
+          <ul class="sci">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright-text">
+      <p>
+        Copyright <i class="far fa-copyright"></i> XYZ. All rights Reserved.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

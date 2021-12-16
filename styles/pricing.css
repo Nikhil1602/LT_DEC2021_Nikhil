@@ -1,0 +1,159 @@
+/* -------------------------------------------------------------------------------------------------- */
+/* PRICING-SECTION */
+/* -------------------------------------------------------------------------------------------------- */
+
+#pricing-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-plan {
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.pricing-plan span {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pricing-plan span::before {
+  position: absolute;
+  content: "Recommended";
+  width: 150%;
+  height: 30px;
+  background: var(--primary);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--default);
+  letter-spacing: 0.1em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-plan-header {
+  padding: 55px 25px;
+  background: var(--text);
+  color: var(--default);
+}
+
+.pricing-plan-title,
+.pricing-plan-summary {
+  margin: 0;
+  text-align: center;
+}
+
+.pricing-plan-title {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.pricing-plan-summary {
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.pricing-plan-description {
+  padding: 25px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.pricing-plan-feature {
+  list-style: none;
+  padding-left: 25px;
+  position: relative;
+  font-size: 0.9em;
+}
+
+.pricing-plan-feature:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.pricing-plan-feature::before {
+  content: "\2714";
+  color: var(--text);
+  position: absolute;
+  left: 0;
+}
+
+.pricing-plan-actions {
+  padding: 20px;
+  border-top: 1px solid var(--default);
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-plan-button {
+  display: inline-block;
+  margin: 15px auto;
+  padding: 8px 20px;
+  text-decoration: none;
+  background: var(--default);
+  border-radius: 5px;
+  border: 1px solid var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.pricing-plan-button:hover {
+  background: var(--text);
+  color: var(--default);
+}
+
+.pricing-plan-cost {
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+.pricing-plan-text {
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* MEDIA-QUERIES */
+/* -------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 420px) {
+  .pricing-plan {
+    height: 500px;
+  }
+
+  .pricing-plan-header {
+    padding: 55px 25px;
+  }
+}
+
+@media (max-width: 300px) {
+  .pricing-plan {
+    height: 500px;
+  }
+
+  .pricing-plan-description {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
